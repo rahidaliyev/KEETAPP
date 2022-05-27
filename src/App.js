@@ -1,10 +1,18 @@
 import './App.css';
-import Navbar from './components/navbar/Navbar';
+import Aboutus from './components/Aboutus';
+import Carouselmain from './components/Carouselmain';
+import Navbar from './components/Navbar';
+
 
 function App() {
   return (
     <div className="App">
  <Navbar />
+
+ <Carouselmain />
+
+<Aboutus />
+
     </div>
   );
 }
