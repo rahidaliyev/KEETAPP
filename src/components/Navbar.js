@@ -9,7 +9,20 @@ import {FcLikePlaceholder} from  'react-icons/fc'
 
 
 export default function Navbar() {
+//  let loginForm = document.querySelector('.login-form-container');
+//  function handleLoginActive(){
+//     loginForm.classList.toggle('active')
+//    }
    
+   
+
+// document.querySelector('#login-btn').onClick = () => {
+//     loginForm.classList.toggle('active');
+// }
+
+// document.querySelector('#close-login-btn').onClick = () => {
+//     loginForm.classList.remove('active');
+// }
     return (
         <div>
              <div className="container">
@@ -26,14 +39,14 @@ export default function Navbar() {
                     </div>
                     <form action="" className="search-form">
                         <input type="search" name="" placeholder="axtarış..." id="search-box"></input>
-                        <label for="search-box"><IoSearch size={20} /> </label>
+                        <label for="search-box"><IoSearch style={{fontSize: "2rem"}} /> </label>
                     </form>
                     <div className="navbar-icons fs-1 d-flex justify-content-center align-items-center">
 
                        {/* search icon is not working */}
                         <icon id="search-btn"><IoSearch size={60} /></icon>
                         <a href="#"  title="Bəyənilənlər"> <FcLikePlaceholder size={30}/></a>
-                        <div id="login-btn" title="Hesabım"><CgProfile size={30}/></div>
+                        <div id="login-btn" title="Hesabım"><CgProfile style={{color:'#6a0dad'}} size={30}/></div>
                         <div id="menu-btn" className="fa-solid fa-bars"></div>
                     </div>
                     <div className="login-form-container">
@@ -48,7 +61,7 @@ export default function Navbar() {
                                 <input type="checkbox" id="remember-me"/>
                                 <label for="remember-me">məni xatırla</label>
                             </div>
-                            <input type="submit" value="Daxil ol" className="login-btn"/>
+                            <input type="submit" value="Daxil ol" className="login-btn" />
                             <p>Şifrəni unutmusan ? <a href="#">Bura basın</a></p>
                             <p>hesabınız yoxdur ? <a href="#">Bura basın</a></p>
                         </form>
