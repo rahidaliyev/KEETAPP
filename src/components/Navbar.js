@@ -24,7 +24,7 @@ export default function Navbar() {
                         </div>
                     </div>
                     <form action="" className="search-form">
-                        <input type="search" name="" placeholder="axtarış.." id="search-box"></input>
+                        <input type="search" name="" placeholder="axtarış..." id="search-box"></input>
                         <label for="search-box"><IoSearch size={20} /> </label>
                     </form>
                     <div className="navbar-icons fs-1 d-flex justify-content-center align-items-center">
