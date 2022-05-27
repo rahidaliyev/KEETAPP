@@ -16,7 +16,7 @@ export default function Aboutus() {
                 <div class="about-me-container d-flex justify-content-center align-items-center">
                     <div class="about-images-container">
                         <div class="about-image">
-                            <img src="../pages/96e2a8f2-0045-42df-9c31-b9e6b70737b2.jpg" class="about-img" alt=""/>
+                            <img src={require("../pages/96e2a8f2-0045-42df-9c31-b9e6b70737b2.jpg")} class="about-img" alt=""/>
                         
                         
                         </div>

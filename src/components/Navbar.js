@@ -3,10 +3,13 @@ import '../css/libro.css'
 import '../css/new-card.css'
 import '../images/libro.jpg'
 import '../images/yellow_back.jpg'
+import '../images/logoofweb.png'
 import {IoBookSharp} from 'react-icons/io5'
 import {IoSearch} from 'react-icons/io5'
 import {CgProfile} from 'react-icons/cg'
 import {FcLikePlaceholder} from  'react-icons/fc'
+
+
 
 export default function Navbar() {
    
@@ -19,7 +22,8 @@ export default function Navbar() {
                         <div className="logo-wrapper">
                             <a href="./index.html"
                                 className="logo-font-style d-flex align-items-center text-decoration-none text-dark">
-                                <div  className="logo" alt="Libro"><IoBookSharp size={50} /> </div> 
+                                    {/* icon color change! */}
+                                <div  className="logo" alt="Libro"><img src={require("../images/logoofweb.png")} style={{height: '80px',marginTop: '1rem'}}  /> </div> 
                             </a>
                         </div>
                     </div>
