@@ -2,6 +2,9 @@ import React from 'react'
 import '../css/libro.css'
 import '../css/new-card.css'
 import '../images/1984.jpg'
+import '../images/richdad.png'
+import '../images/dostoyevski.jfif'
+import '../images/alinino.png'
 
 export default function Carouselmain() {
   return (
@@ -31,11 +34,13 @@ export default function Carouselmain() {
                                 </div>
                                 <div className="carousel-item" data-bs-interval="4000">
                                     <a href="#" className="carousel-bg-images">
+                                        {/* here */}
                                         <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1614438700_57-p-temnii-fon-noch-64.jpg"
                                             className="carousel-bg-img" alt="carousel-bg-images"/>
                                     </a>
+                                     {/* here */}
                                     <a href="#" className="carousel-images">
-                                        <img src="https://pbs.twimg.com/media/DumG1jaWsAE0vcH.jpg" className="carousel-img"
+                                        <img src={require("../images/richdad.png")} className="carousel-img"
                                             alt="Hobbit"/>
                                     </a>
                                 </div>
@@ -45,7 +50,9 @@ export default function Carouselmain() {
                                             className="carousel-bg-img" alt="carousel-bg-images"/>
                                     </a>
                                     <a href="#" className="carousel-images">
-                                        <img src="https://ornekkitap.blob.core.windows.net/images/book/cover/600x800/ZUVI0RDO69.png"
+
+                                        {/* here */}
+                                        <img src={require("../images/dostoyevski.jfif")}
                                             className="carousel-img" alt="Hobbit"/>
                                     </a>
                                 </div>
@@ -55,7 +62,7 @@ export default function Carouselmain() {
                                             className="carousel-bg-img" alt="carousel-bg-images"/>
                                     </a>
                                     <a href="#" className="carousel-images">
-                                        <img src="https://www.grafika.az/uploads/product/small/2020-05-06-23-50-211588794621.jpg"
+                                        <img src={require("../images/alinino.png")}
                                             className="carousel-img" alt="Hobbit"/>
                                     </a>
                                 </div>
@@ -64,10 +71,10 @@ export default function Carouselmain() {
                     </div>
                 </div>
                 <a href="#slider1" className="carousel-control-prev" data-bs-slide="prev" title="prev">
-                    <span className="carousel-control-prev-icon bg-success p-4"></span>
+                    {/* <span className="carousel-control-prev-icon bg-success p-4"></span> */}
                 </a>
                 <a href="#slider1" className="carousel-control-next" data-bs-slide="next" title="next">
-                    <span className="carousel-control-next-icon bg-success p-4"></span>
+                    {/* <span className="carousel-control-next-icon bg-success p-4"></span> */}
                 </a>
             </div>
         </div>
