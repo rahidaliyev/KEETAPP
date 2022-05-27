@@ -1,9 +1,7 @@
 import React from 'react'
 import '../css/libro.css'
 import '../css/new-card.css'
-import '../images/libro.jpg'
-import '../images/yellow_back.jpg'
-
+import '../images/1984.jpg'
 
 export default function Carouselmain() {
   return (
@@ -26,7 +24,8 @@ export default function Carouselmain() {
                                             class="carousel-bg-img" alt="carousel-bg-images"/>
                                     </a>
                                     <a href="#" class="carousel-images">
-                                        <img src="https://i.pinimg.com/736x/4f/bf/62/4fbf62e64a7f63c8a01ea257fea405dc--book-cover-art-book-covers.jpg"
+                                        {/* here */}
+                                        <img src={require("../images/1984.jpg")} 
                                             class="carousel-img" alt="Hobbit"/>
                                     </a>
                                 </div>
