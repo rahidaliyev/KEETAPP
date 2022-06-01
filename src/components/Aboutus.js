@@ -7,16 +7,14 @@ import '../pages/96e2a8f2-0045-42df-9c31-b9e6b70737b2.jpg'
 
 export default function Aboutus() {
     return (
-        <div>
+        <div >
 
-            <div className="section-padding about mt-5">
-                <div className="about-me">
+            <div  className="section-padding about mt-5">
+                <div id='aboutid' className="about-me">
                     <div className="about-me-container d-flex justify-content-center align-items-center">
                         <div className="about-images-container">
                             <div className="about-image">
                                 <img src={require("../pages/96e2a8f2-0045-42df-9c31-b9e6b70737b2.jpg")} className="about-img" alt="" />
-
-
                             </div>
                         </div>
                         <div className="about-info-container p-5">
