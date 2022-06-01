@@ -6,16 +6,7 @@ import Defaultpage from './components/Defaultpage';
 function App() {
   return (
     <>
-   
-
-   <Defaultpage/>
-
-  
-
-
-
-
-
+      <Defaultpage />
     </>
   );
 }

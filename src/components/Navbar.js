@@ -5,13 +5,17 @@ import '../images/logoofweb.png'
 import { Link } from 'react-router-dom'
 import { IoSearch } from 'react-icons/io5'
 import { CgProfile } from 'react-icons/cg'
-import { FcLikePlaceholder } from 'react-icons/fc'
+import {BsFillHeartFill} from 'react-icons/bs'
 import Form from 'react-bootstrap/Form'
 import brandlogo from '../logos/brandlogo.svg'
 const style={ height: '80px', marginTop: '1rem' }
 
 
 export default function Navbar() {
+const changeColorButton=(e)=>{
+    e.target.style.color = 'red';
+}
+
 
     return (
         <div>
@@ -35,7 +39,7 @@ export default function Navbar() {
 
                          
                             <a id="search-btn"><IoSearch style={{fontSize: '3rem'}}  /></a>
-                            <a href="#" title="Bəyənilənlər"> <FcLikePlaceholder values={{color:'purple'}} style={{fontSize: '3rem'}} /></a>
+                            <a href="#" title="Bəyənilənlər"> <BsFillHeartFill onMouseOver={changeColorButton} style={{fontSize: '3rem',color:'#DB7093'}} /></a>
                            
                           <Link to="/login"><CgProfile className='text-success'  size={30} /></Link>
                            
