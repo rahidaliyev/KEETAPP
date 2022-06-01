@@ -31,7 +31,7 @@ export default function Newlogin() {
                 <h3>Login</h3>
                 <form>
                   <div style={{marginTop: '2rem'}}>
-                    <input type="text" name="" placeholder="Enter your username..." required />
+                    <input type="email" name="" placeholder="Enter your e-mail..." required />
                 
                     <input type="password" name="" placeholder="Enter your password..." required />
                 </div>
