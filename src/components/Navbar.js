@@ -2,14 +2,12 @@ import React from 'react'
 import '../css/new-card.css'
 import '../css/libro.css'
 import '../images/logoofweb.png'
-import { Route,Routes } from 'react-router-dom'
-import Newlogin from './Newlogin/Newlogin'
-import Newregister from './Newregister/Newregister'
 import { Link } from 'react-router-dom'
 import { IoSearch } from 'react-icons/io5'
 import { CgProfile } from 'react-icons/cg'
 import { FcLikePlaceholder } from 'react-icons/fc'
 import Form from 'react-bootstrap/Form'
+import brandlogo from '../logos/brandlogo.svg'
 const style={ height: '80px', marginTop: '1rem' }
 
 
@@ -25,7 +23,7 @@ export default function Navbar() {
                                 <a href="./index.html"
                                     className="logo-font-style d-flex align-items-center text-decoration-none text-dark">
                                     {/* icon color change! */}
-                                    <div className="logo" alt="Libro"><img src={require("../images/logoofweb.png")} style={style} /> </div>
+                                    <div className="logo" alt="Libro"><img src={brandlogo} style={style} /> </div>
                                 </a>
                             </div>
                         </div>
@@ -37,7 +35,7 @@ export default function Navbar() {
 
                          
                             <a id="search-btn"><IoSearch style={{fontSize: '3rem'}}  /></a>
-                            <a href="#" title="Bəyənilənlər"> <FcLikePlaceholder style={{fontSize: '3rem'}} /></a>
+                            <a href="#" title="Bəyənilənlər"> <FcLikePlaceholder values={{color:'purple'}} style={{fontSize: '3rem'}} /></a>
                            
                           <Link to="/login"><CgProfile className='text-success'  size={30} /></Link>
                            
