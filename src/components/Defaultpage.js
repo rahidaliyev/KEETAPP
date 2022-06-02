@@ -5,6 +5,11 @@ import Navbar from './Navbar'
 import Newlogin from './Newlogin/Newlogin'
 import Newregister from './Newregister/Newregister'
 import { Routes,Route } from 'react-router-dom'
+import Coxoxunan from './Coxoxunan'
+import Footer from './Footer'
+import BestBooks from './BestBooks/BestBooks'
+
+import Coxsatilankitab from './Coxsatilankitab'
 
 export default function Defaultpage() {
   return (
@@ -15,6 +20,10 @@ export default function Defaultpage() {
              <Navbar />
             <Carouselmain />
             <Aboutus />
+            <Coxoxunan />
+            <BestBooks />
+            <Coxsatilankitab />
+            <Footer />
           </>} ></Route>
       
           <Route path="/login" element={<Newlogin />} />
