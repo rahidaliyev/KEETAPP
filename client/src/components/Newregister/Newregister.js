@@ -30,8 +30,8 @@ export default function Newregister() {
     })
   }
 
-  const checkValidation = (e) => {
-    setConfirmPassword(e.target.value);
+  const checkValidation = () => {
+    // setConfirmPassword(e.target.value);
     if (password != confirmPassword) {
       setisError("Passwords must be same!")
       console.log(isError);
@@ -66,8 +66,11 @@ export default function Newregister() {
             name="" placeholder="Enter password..." required />
           
           <input type="password"
-            value={confirmPassword}
-            onChange={(e) =>  checkValidation(e) }
+           
+            onChange={(e) =>  {
+              setConfirmPassword(e.target.value)
+              checkValidation()} }
+              value={confirmPassword}
             name="confirmpassword"
             placeholder="Repeat password again..." required />
 
