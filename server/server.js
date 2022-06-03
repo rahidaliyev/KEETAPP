@@ -12,28 +12,14 @@ const db=mysql.createPool({
 
 let users=[]; 
 
-// app.get("/",(req,res)=>{
-//     // const sqlInsert="insert into users(email,password) values('rahidaliyev18@gmail.com','123456789')"
-//     // db.query(sqlInsert,(err,result)=>{
-//     //   res.send("Hello Sebish!");
-//     // });
-    
-//     res.send("Hello Sebish!");
 
-
-// })
-
-// app.get('/users',(req,res)=>{
-//     const sqlSelect='select *from users';
-//     db.query(sqlSelect,(err,result)=>{
-//         res.send(result)
-//     })
-// })
 app.use(cors())
 app.use(express.json())
 
 app.use(bodyParser.urlencoded({extended:true}))
 
+
+// users
 app.get('/api/get',(req,res)=>{
       const sqlSelect="select * from users"
         db.query(sqlSelect,(err,result)=>{
@@ -59,8 +45,19 @@ app.post('/api/insert',(req,res)=>{
 
 
 
+//teklif irad --offer
 
-
+app.post('/api/offerinsert',(req,res)=>{
+  const email=req.body.email
+  const phone=req.body.phone
+  const author=req.body.author
+  const book=req.body.book
+  const sqlInsert="insert into offer(email,phone,author,book) values(?,?,?,?)"
+  db.query(sqlInsert,[email,phone,author,book],(err,result)=>{
+    console.log(result)
+    res.status(200).json(result)
+  });
+})
 
 
 

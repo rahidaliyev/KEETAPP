@@ -25,8 +25,8 @@ export default function Newlogin() {
     const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
     const [lenghtError, setlenghtError] = useState("");
+    const [checkPassword,setCheckPassword]=useState("");
 
-    const [users, setUsers] = useState([])
     const navigate = useNavigate()
     const submitForm = (e) => {
         e.preventDefault()
@@ -34,14 +34,22 @@ export default function Newlogin() {
             .then(function (response) {
                 let bizimdata = response.data
                 console.log(bizimdata)
-                const data = bizimdata.find((elem) => elem.email == email && elem.password == password)
+                const data = bizimdata.find((elem) => elem.email == email)
                 if (data) {
-                    console.log("login oldun!")
+                    if(password==data.password){
+                          console.log("login oldun!")
                     localStorage.setItem('user', data.email)
                     navigate("../", { replace: true });
+                    setCheckPassword(" ");
+                    }
+                    else{
+                        // alert("Password yalnisdir!")
+                        setCheckPassword("Password yalnisdir!");
+                    }
+                  
                 }
                 else {
-                    console.log("gelen defe gel!")
+                    alert("Belə hesab mövcud deyil!")
                 }
             })
 
@@ -55,6 +63,8 @@ export default function Newlogin() {
         else {
             setlenghtError("")
         }
+        setCheckPassword(" ");
+
     }
 
     return (
@@ -86,7 +96,8 @@ export default function Newlogin() {
                             }} ><FaRegEyeSlash size={15} />
                             </a>
                         </div>
-          <div style={{ color: 'red', marginTop: '-17px' }} >{lenghtError}</div>
+                        <div  style={{position: "absolute" ,display:  checkPassword ? 'block' : 'none',color: 'red', marginTop: '-17px' } }>{checkPassword}</div>
+          <div name='passcheck' style={{ color: 'red', marginTop: '-17px' }} >{lenghtError}</div>
 
                     </div>
                     <input style={{ marginTop: '2rem' }} type="submit" onClick={submitForm} name="" value="Login" />

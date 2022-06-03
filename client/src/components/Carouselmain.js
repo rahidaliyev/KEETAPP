@@ -23,12 +23,12 @@ export default function Carouselmain() {
                                 <div className="carousel-images-wrapper">
                                     <div className="carousel-item active" data-bs-interval="4000">
                                         <a href="#" className="carousel-bg-images">
-                                            <img src="https://img2.wtftime.ru/store/2020/01/28/I1YKzqoM.jpg"
+                                            <img src="https://wallpaperaccess.com/full/2512545.jpg"
                                                 className="carousel-bg-img" alt="carousel-bg-images" />
                                         </a>
                                         <a href="#" className="carousel-images">
                                             {/* here */}
-                                            <img src={require("../images/1984.jpg")}
+                                            <img src='https://render.fineartamerica.com/images/rendered/default/poster/8/10/break/images/artworkimages/medium/3/1984-book-art-i-ink-well.jpg'
                                                 className="carousel-img" alt="Hobbit" />
                                         </a>
                                     </div>
