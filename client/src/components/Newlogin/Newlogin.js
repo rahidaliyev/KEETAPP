@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import "../Newlogin/Newlogin.css"
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link, useNavigate } from 'react-router-dom'
 import Newregister from '../Newregister/Newregister'
 import { BiHomeAlt } from 'react-icons/bi'
-import { Axios } from 'axios'
+import Axios  from 'axios'
 
 
 const style = {
@@ -23,30 +23,32 @@ export default function Newlogin() {
     // const users = [];
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [users,setUsers]=useState([
+    const [users, setUsers] = useState([])
+    const navigate = useNavigate()
+    const submitForm = (e) => {
+        e.preventDefault()
+        Axios.get('http://localhost:3001/api/get')
+        .then(function (response) {
+            let bizimdata = response.data
+            console.log(bizimdata)
+            const data = bizimdata.find((elem) => elem.email == email && elem.password == password)
+            if (data) {
+                console.log("login oldun!")
+                localStorage.setItem('user', data.email)
+                navigate("../", { replace: true });
+            }
+            else {
+                console.log("gelen defe gel!")
+            }
+        })
 
-    ])
-    
-    const submitForm = () => {
-     users= Axios.get('http://localhost:3001/api/get')
-        console.log(users)
-        const data = users.find((elem) => 
-            elem.email == email && elem.password == password
-        )
-        if (data) {
-            console.log("login oldun!")
-        }
-        else {
-            console.log("gelen defe gel!")
-}
-      
     }
 
 
     return (
-       
+
         <div className='body' >
-       
+
             <Link to="/">
                 <BiHomeAlt style={homestyle} />
 
@@ -61,7 +63,7 @@ export default function Newlogin() {
 
                         <input type="password" onChange={(e) => { setPassword(e.target.value) }} name="" placeholder="Enter your password..." required />
                     </div>
-                    <input  style={{ marginTop: '2rem' }} type="submit" onClick={submitForm} name="" value="Login" />
+                    <input style={{ marginTop: '2rem' }} type="submit" onClick={submitForm} name="" value="Login" />
                     <Link style={style} to="/register">Sign up for Keet.app</Link>
                 </form>
             </div>

@@ -10,7 +10,7 @@ const db=mysql.createPool({
     database: "keetappbase"
 });
 
-const users=[]; 
+let users=[]; 
 
 // app.get("/",(req,res)=>{
 //     // const sqlInsert="insert into users(email,password) values('rahidaliyev18@gmail.com','123456789')"
@@ -38,6 +38,7 @@ app.get('/api/get',(req,res)=>{
       const sqlSelect="select * from users"
         db.query(sqlSelect,(err,result)=>{
           // users.push(result.body);
+          users = []
           result.map((e)=>{
            users.push(e)
           })
@@ -52,6 +53,7 @@ app.post('/api/insert',(req,res)=>{
     const sqlInsert="insert into users(email,password) values(?,?)"
     db.query(sqlInsert,[email,password],(err,result)=>{
       console.log(result)
+      res.status(200).json(result)
     });
 })
 

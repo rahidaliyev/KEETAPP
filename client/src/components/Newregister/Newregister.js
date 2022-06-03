@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Axios from 'axios'
 import '../Newregister/Newregister.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { BiHomeAlt } from 'react-icons/bi'
 
 
@@ -21,13 +21,19 @@ export default function Newregister() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isError, setisError] = useState("");
-  const submitForm = () => {
+  const navigate = useNavigate()
+  const submitForm = (e) => {
+    e.preventDefault();
     Axios.post('http://localhost:3001/api/insert', {
       email: email,
       password: password
-    }).then(() => {
-      alert("Successfully Register!");
+    }).then(function (response) {
+      navigate("../login", { replace: true });
+      console.log(response);
     })
+    .catch(function (error) {
+      console.log(error);
+    });
   }
 
   const checkValidation = () => {
@@ -58,11 +64,11 @@ export default function Newregister() {
         <form>
 
           <input type="email"
-            onChange={(e) => { setEmail(e.target.value) }}
+            onChange={(e) => setEmail(e.target.value)}
             name="" placeholder="Enter your e-mail..." required />
 
           <input type="password"
-            onChange={(e) => { setPassword(e.target.value) }}
+            onChange={(e) => setPassword(e.target.value)}
             name="" placeholder="Enter password..." required />
           
           <input type="password"
