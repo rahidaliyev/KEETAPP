@@ -8,7 +8,7 @@ import BestSeller from './BestSeller/BestSeller'
 
 export default function Coxsatilankitab() {
   return (
-    <div style={{display: 'flex',flexDirection: 'row', justifyContent: 'center'}}>
+    <div id='bestseller' style={{display: 'flex',flexDirection: 'row', justifyContent: 'center'}}>
         <Routes>
             <Route path='/' element={
             <>

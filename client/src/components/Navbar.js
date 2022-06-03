@@ -37,7 +37,7 @@ const logout = (e) =>{
                                 <a href="./index.html"
                                     className="logo-font-style d-flex align-items-center text-decoration-none text-dark">
                                     {/* icon color change! */}
-                                    <div className="logo" alt="Libro"><img src={brandlogo} style={style} /> </div>
+                                    <Link to='/' className="logo" alt="Libro"><img src={brandlogo} style={style} /> </Link>
                                 </a>
                             </div>
                         </div>
@@ -62,16 +62,16 @@ const logout = (e) =>{
                     <a href="#aboutid" className="nav-item nav-link-style px-4 text-decoration-none fs-4 text-capitalize">
                         <span className="nav-link text-white">Haqqımızda</span>
                     </a>
-                    <a href="#" className="nav-item nav-link-style px-4 text-decoration-none fs-4 text-capitalize">
+                    <a href="#bestreading" className="nav-item nav-link-style px-4 text-decoration-none fs-4 text-capitalize">
                         <span className="nav-link text-white">çox oxunanlar</span>
                     </a>
-                    <a href="#" className="nav-item nav-link-style px-4 text-decoration-none fs-4 text-capitalize">
+                    <a href="#bestbooks" className="nav-item nav-link-style px-4 text-decoration-none fs-4 text-capitalize">
                         <span className="nav-link text-white">bədii kitablar</span>
                     </a>
-                    <a href="#" className="nav-item nav-link-style px-4 text-decoration-none fs-4 text-capitalize">
+                    <a href="#bestseller" className="nav-item nav-link-style px-4 text-decoration-none fs-4 text-capitalize">
                         <span className="nav-link text-white">Çox satılanlar</span>
                     </a>
-                    <a href="#" className="nav-item nav-link-style px-4 text-decoration-none fs-4 text-capitalize">
+                    <a href="#footer" className="nav-item nav-link-style px-4 text-decoration-none fs-4 text-capitalize">
                         <span className="nav-link text-white">Əlaqə</span>
                     </a>
                 </div>

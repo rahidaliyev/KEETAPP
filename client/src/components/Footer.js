@@ -3,7 +3,7 @@ import '../css/libro.css'
 
 export default function Footer() {
   return (
-    <div>
+    <div id='footer'>
 <footer className="footer bg-danger" >
         <div className="container">
             <div className="footer__content">

@@ -2,7 +2,7 @@ import React from 'react'
 import './BestBooks.css'
 export default function BestBooks() {
   return (
-    <div>
+    <div id='bestbooks'>
         <div className="carousel slide section-padding all-features" id="slider2">
             <h2 className="nav-link-style d-flex fs-1 justify-content-center align-items-center mt-4 mb-4">Ən Yaxşı Bədii
                 Kitablarımız</h2>

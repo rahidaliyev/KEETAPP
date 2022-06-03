@@ -3,7 +3,7 @@ import Axios from 'axios'
 import '../Newregister/Newregister.css'
 import { Link, useNavigate } from 'react-router-dom'
 import { BiHomeAlt } from 'react-icons/bi'
-
+import { FaRegEyeSlash } from 'react-icons/fa';
 
 export default function Newregister() {
   const style = {
@@ -21,6 +21,8 @@ export default function Newregister() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isError, setisError] = useState("");
+  const [lenghtError, setlenghtError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate()
   const submitForm = (e) => {
     e.preventDefault();
@@ -31,9 +33,9 @@ export default function Newregister() {
       navigate("../login", { replace: true });
       console.log(response);
     })
-    .catch(function (error) {
-      console.log(error);
-    });
+      .catch(function (error) {
+        console.log(error);
+      });
   }
 
   const checkValidation = () => {
@@ -42,12 +44,18 @@ export default function Newregister() {
       setisError("Passwords must be same!")
       console.log(isError);
     }
-    else {
-      setisError(" ");
-    }
-
 
   }
+  const checkLength = () => {
+    if (password.length <= 8) {
+      setlenghtError("Password min lenght must be 8 symbols! ")
+      console.log(setlenghtError)
+    }
+    else {
+      setlenghtError("")
+    }
+  }
+
 
 
 
@@ -66,19 +74,30 @@ export default function Newregister() {
           <input type="email"
             onChange={(e) => setEmail(e.target.value)}
             name="" placeholder="Enter your e-mail..." required />
-
-          <input type="password"
-            onChange={(e) => setPassword(e.target.value)}
+ <div style={{position: 'relative',right: "-2px"}}>
+          <input type={showPassword ? "text" : "password"}
+            onChange={(e) => {
+              setPassword(e.target.value)
+              checkLength()
+            }}
             name="" placeholder="Enter password..." required />
-          
-          <input type="password"
-           
-            onChange={(e) =>  {
-              setConfirmPassword(e.target.value)
-              checkValidation()} }
+             <a style={{position:'absolute', top:'3px',right: '10px'}}  onClick={() => {
+              setShowPassword(!showPassword)
+            }} ><FaRegEyeSlash size={15} />
+            </a>
+            </div>
+          <div style={{ color: 'red', marginTop: '-17px' }} >{lenghtError}</div>
+
+            <input type={showPassword ? "text" : "password"}
+
+              onChange={(e) => {
+                setConfirmPassword(e.target.value)
+                checkValidation()
+              }}
               value={confirmPassword}
-            name="confirmpassword"
-            placeholder="Repeat password again..." required />
+              name="confirmpassword"
+              placeholder="Repeat password again..." required />
+           
 
           <div style={{ color: 'red', marginTop: '-17px' }} >{isError}</div>
 

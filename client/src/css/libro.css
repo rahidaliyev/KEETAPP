@@ -947,6 +947,9 @@ html {
         height: 40rem;
         margin: 1rem;
     }
+    .navbar-logo .logo-wrapper{
+        width: 241px;
+    }
 }
 
 @media (max-width: 768px) {
