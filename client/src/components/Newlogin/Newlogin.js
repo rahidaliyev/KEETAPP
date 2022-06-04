@@ -69,14 +69,14 @@ export default function Newlogin() {
 
     return (
 
-        <div className='body' >
+        <div>
 
             <Link to="/">
                 <BiHomeAlt style={homestyle} />
 
             </Link>
 
-            <div className="login-box">
+            <div className="login-box max-vw-100 max-vh-100">
 
                 <h3>Login</h3>
                 <form>

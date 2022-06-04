@@ -11,11 +11,11 @@ export default function BestBooks() {
                     <div className="features">
                         <div className="features-wrapper">
                             <div className="features-left-container">
-                                <img src="https://i.pinimg.com/736x/7d/d9/54/7dd9543c7277b9bcdf0a6ddeda458674.jpg"
+                                <img src="https://m.media-amazon.com/images/I/91CFcOQxEqL._AC_SL1200_.jpg"
                                     className="features-img" alt=""/>
                             </div>
                             <div className="features-right-container">
-                                <img src="https://1.bp.blogspot.com/--iMiT9IAfKY/VLfyU4GsCuI/AAAAAAAAESo/qSezpFZuwQg/s1600/En%2Biyi%2Bfantastik%2Bkitap%2Bserileri%2B%23ilk10%2B%2810%29.jpg"
+                                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/06/19/11/books-one-hit-wonders-comp.jpg?quality=75&width=990&auto=webp&crop=982:726,smart"
                                     className="features-img" alt=""/>
                             </div>
                         </div>
@@ -25,11 +25,11 @@ export default function BestBooks() {
                     <div className="features">
                         <div className="features-wrapper">
                             <div className="features-left-container">
-                                <img src="http://1.bp.blogspot.com/-JVBa4HfRyIs/VLfygTuWnxI/AAAAAAAAETE/dlZgs32yCOI/s1600/En%2Biyi%2Bfantastik%2Bkitap%2Bserileri%2B%23ilk10%2B(7).jpg"
+                                <img src="https://149349728.v2.pressablecdn.com/wp-content/uploads/2019/03/0*iCcwV2OEUW-xgmk8.jpg"
                                     className="features-img" alt=""/>
                             </div>
                             <div className="features-right-container">
-                                <img src="http://2.bp.blogspot.com/-joFncZCh7_g/VUPYxKZJzwI/AAAAAAAAIqw/XdDVv7AHddM/s1600/Nisan%2Bay%C4%B1%2Bokunan%2Bkitaplar.jpg"
+                                <img src="https://cdn11.bigcommerce.com/s-do0ookap9x/images/stencil/1280x1280/products/10108/13681/apiksmz1w__14948.1528308097.jpg?c=2"
                                     className="features-img" alt=""/>
                             </div>
                         </div>
