@@ -32,15 +32,12 @@ export default function BookCard(props) {
                         <div className="card-text-wrapper">
                             <span className="card-text fs-5 fw-bold">
                                 {props.aboutbook}
-                                {/* Bilbo Baggins’in Gandalf tarafından hiç beklemediği bir anda
-                                evine gelen 13 cüce ile değişen hayatı, Orta Dünya’nın kaderini değiştirecek olan Tek
-                                Yüzük’ün bulunuşu, ulu ejder Smaug’un öldürülüşü ve kadim cüce kenti Erebor’un kurtuluşu
-                                anlatılmaktadır. */}
+                               
                             </span>
                         </div>
                         <span className="author fs-4 fw-bold text-dark text-capitalize d-block p-3 px-0">
-                            müəllif :
-                            <span className="author-name text-capitalize text-dark fs-5 fw-normal">{props.author}</span>
+                            müəllif : 
+                            <span className="author-name text-capitalize text-dark fs-5 fw-normal"> {props.author}</span>
                         </span>
                         <span className="book-info text-capitalize text-dark fs-4 fw-bold d-block p-3 px-0">
                             kitabın adı :

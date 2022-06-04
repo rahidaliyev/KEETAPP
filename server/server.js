@@ -6,7 +6,7 @@ const mysql=require("mysql");
 const db=mysql.createPool({
     host: "localhost",
     user: "root",
-    password: "admin",
+    password: "12345",
     database: "keetappbase"
 });
 
