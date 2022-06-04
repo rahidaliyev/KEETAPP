@@ -4,8 +4,8 @@ export default function BestBooks() {
   return (
     <div id='bestbooks'>
         <div className="carousel slide section-padding all-features" id="slider2">
-            <h2 className="nav-link-style d-flex fs-1 justify-content-center align-items-center mt-4 mb-4">Ən Yaxşı Bədii
-                Kitablarımız</h2>
+            <h2 className="nav-link-style text-capitalize d-flex fs-1 justify-content-center align-items-center mt-4 mb-4">ən yaxşı kitab posterlərimiz
+               </h2>
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <div className="features">

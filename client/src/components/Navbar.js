@@ -50,8 +50,9 @@ const logout = (e) =>{
                          
                             <a id="search-btn"><IoSearch style={{fontSize: '3rem'}}  /></a>
                             <a href="#" title="Bəyənilənlər"> <BsFillHeartFill onMouseOver={changeColorButton} style={{fontSize: '3rem',color:'#DB7093'}} /></a>
-                           
+                          <div>
                          {user? <MdOutlineLogout size={35}  onClick={logout} />:<Link to="/login"><CgProfile className='text-success' size={35} /></Link>} 
+                         </div> 
                         </div>
                           
                     </header>
@@ -66,7 +67,7 @@ const logout = (e) =>{
                         <span className="nav-link text-white">çox oxunanlar</span>
                     </a>
                     <a href="#bestbooks" className="nav-item nav-link-style px-4 text-decoration-none fs-4 text-capitalize">
-                        <span className="nav-link text-white">bədii kitablar</span>
+                        <span className="nav-link text-white">posterlər</span>
                     </a>
                     <a href="#bestseller" className="nav-item nav-link-style px-4 text-decoration-none fs-4 text-capitalize">
                         <span className="nav-link text-white">Çox satılanlar</span>

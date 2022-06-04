@@ -19,6 +19,7 @@ const homestyle = {
 }
 
 
+
 export default function Newlogin() {
     // const users = [];
     const [email, setEmail] = useState("");
@@ -76,15 +77,16 @@ export default function Newlogin() {
 
             </Link>
 
-            <div className="login-box max-vw-100 max-vh-100">
+            <div style={{minHeight: '450px',width: '350px'}} className="login-box">
 
-                <h3>Login</h3>
-                <form>
+               
+                <form style={{marginTop: '30px'}}>
+                <h3 className='text-info' style={{fontSize: "40px" }}>Login</h3>
                     <div style={{ marginTop: '2rem' }}>
-                        <input type="email" onChange={(e) => { setEmail(e.target.value) }} name="" placeholder="Enter your e-mail..." required />
+                        <input style={{marginBottom: '30px'}} type="email" onChange={(e) => { setEmail(e.target.value) }} name="" placeholder="Enter your e-mail..." required />
                         <div style={{ position: 'relative', right: "-2px" }}>
 
-                            <input type={showPassword ? "text" : "password"}
+                            <input style={{marginBottom: '30px'}} type={showPassword ? "text" : "password"}
                                 onChange={(e) => {
                                     setPassword(e.target.value)
                                     checkLength()
@@ -110,5 +112,7 @@ export default function Newlogin() {
                 {/* <Route path="/" element={<></>}> </Route> */}
             </Routes>
         </div>
+      
+  
     )
 }
