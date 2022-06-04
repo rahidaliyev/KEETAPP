@@ -16,8 +16,8 @@
 .card-img{
     height: 30rem;
 }
-.card-info{
-    border: 1px solid black !important;
+.card-info:hover{
+    box-shadow: 1px 1px 2px grey, 0 0 20px grey, 0 0 5px darkblue;
 }
 .card-container .card-info {
     display: flex;

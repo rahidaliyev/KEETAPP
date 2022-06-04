@@ -1,10 +1,6 @@
 import React from 'react'
 import '../css/libro.css'
 import '../css/new-card.css'
-import '../images/1984.jpg'
-import '../images/richdad.png'
-import '../images/dostoyevski.jfif'
-import '../images/alinino.png'
 
 export default function Carouselmain() {
     return (
@@ -23,46 +19,46 @@ export default function Carouselmain() {
                                 <div className="carousel-images-wrapper">
                                     <div className="carousel-item active" data-bs-interval="4000">
                                         <a href="#" className="carousel-bg-images">
-                                            <img src="https://wallpaperaccess.com/full/2512545.jpg"
+                                            <img src={require ("../images/carouselbg/killmockbg.jpg")}
                                                 className="carousel-bg-img" alt="carousel-bg-images" />
                                         </a>
                                         <a href="#" className="carousel-images">
                                             {/* here */}
-                                            <img src='https://render.fineartamerica.com/images/rendered/default/poster/8/10/break/images/artworkimages/medium/3/1984-book-art-i-ink-well.jpg'
+                                            <img src={require ("../images/carouselimg/killmock.jpg")}
                                                 className="carousel-img" alt="Hobbit" />
                                         </a>
                                     </div>
                                     <div className="carousel-item" data-bs-interval="4000">
                                         <a href="#" className="carousel-bg-images">
                                             {/* here */}
-                                            <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1614438700_57-p-temnii-fon-noch-64.jpg"
+                                            <img src={require ("../images/carouselbg/witcherbg.png")}
                                                 className="carousel-bg-img" alt="carousel-bg-images" />
                                         </a>
                                         {/* here */}
                                         <a href="#" className="carousel-images">
-                                            <img src={require("../images/richdad.png")} className="carousel-img"
+                                            <img src={require ("../images/carouselimg/witcher.png")} className="carousel-img"
                                                 alt="Hobbit" />
                                         </a>
                                     </div>
                                     <div className="carousel-item" data-bs-interval="4000">
                                         <a href="#" className="carousel-bg-images">
-                                            <img src="https://cdn.culture.ru/images/109fc77e-a24f-5fb0-88b7-1f480749ba66"
+                                            <img src={require ("../images/carouselbg/1984bg.jpg")}
                                                 className="carousel-bg-img" alt="carousel-bg-images" />
                                         </a>
                                         <a href="#" className="carousel-images">
 
                                             {/* here */}
-                                            <img src={require("../images/dostoyevski.jfif")}
+                                            <img src={require ("../images/carouselimg/1984.jpg")}
                                                 className="carousel-img" alt="Hobbit" />
                                         </a>
                                     </div>
                                     <div className="carousel-item" data-bs-interval="4000">
                                         <a href="#" className="carousel-bg-images">
-                                            <img src="https://w-dog.ru/wallpapers/9/11/531622032320112/skaly-kanon-kamni-pustynya-nebo-oblaka.jpg"
+                                            <img src={require ("../images/carouselbg/chessbg.jpg")}
                                                 className="carousel-bg-img" alt="carousel-bg-images" />
                                         </a>
                                         <a href="#" className="carousel-images">
-                                            <img src={require("../images/alinino.png")}
+                                            <img src={require ("../images/carouselimg/chess.png")}
                                                 className="carousel-img" alt="Hobbit" />
                                         </a>
                                     </div>

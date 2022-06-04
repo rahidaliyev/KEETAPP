@@ -10,6 +10,11 @@ import Footer from './Footer'
 import BestBooks from './BestBooks/BestBooks'
 
 import Coxsatilankitab from './Coxsatilankitab'
+import Book1 from './Readbook/Book1'
+import Book2 from './Readbook/Book2'
+import Book3 from './Readbook/Book3'
+import Book4 from './Readbook/Book4'
+import Book5 from './Readbook/Book5'
 
 export default function Defaultpage() {
   return (
@@ -28,6 +33,12 @@ export default function Defaultpage() {
       
           <Route path="/login" element={<Newlogin />} />
           <Route path="/register" element={<Newregister />} />
+                <Route path='/book1' element={<Book1/>}/>
+                <Route path='/book2' element={<Book2/>}/>
+                <Route path='/book3' element={<Book3/>}/>
+                <Route path='/book4' element={<Book4/>}/>
+                <Route path='/book5' element={<Book5/>}/>
+
       </Routes>
     </>
   )

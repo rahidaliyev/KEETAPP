@@ -1,7 +1,13 @@
 import React from 'react'
+import {AiOutlineHeart} from 'react-icons/ai'
 import '../../css/libro.css'
 import '../../css/new-card.css'
 export default function BestSeller() {
+
+const filledHeart=()=>{
+
+}
+
   return (
     <div  >
         <div className="carousel slide" data-bs-ride="carousel" id="slider4">
@@ -14,7 +20,7 @@ export default function BestSeller() {
                                 <div className="product-card-images">
                                     <div className="offer">
                                         <span
-                                            className="position-absolute top-1 end-0 bg-danger text-white p-3 rounded-circle fs-5">34%</span>
+                                            className="position-absolute top-1 end-0 bg-success text-white p-3 rounded-circle fs-5"><AiOutlineHeart size={23} /></span>
                                     </div>
                                     <a href="#" className="product-link" title="product">
                                         <img src="https://www.adazing.com/wp-content/uploads/2020/03/stephen-king-116-scaled.jpg"
@@ -26,8 +32,7 @@ export default function BestSeller() {
                                         SemaTary</span>
                                     <span className="product-info"><span className="book-info">Müəllif : </span>STEPHEN
                                         KING</span>
-                                    <span className="product-info"><span className="book-info">Qiymət : </span>
-                                        22.99$</span>
+                                   
                                 </div>
                             </div>
                         </div>                       

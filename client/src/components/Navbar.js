@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../css/new-card.css'
 import '../css/libro.css'
-import '../images/logoofweb.png'
 import { Link } from 'react-router-dom'
 import { IoSearch } from 'react-icons/io5'
 import { CgProfile } from 'react-icons/cg'
@@ -9,10 +8,11 @@ import {BsFillHeartFill} from 'react-icons/bs'
 import Form from 'react-bootstrap/Form'
 import brandlogo from '../logos/brandlogo.svg'
 import {MdOutlineLogout} from 'react-icons/md'
-const style={ height: '80px', marginTop: '1rem' }
+
 
 
 export default function Navbar() {
+    const style={ height: '80px', marginTop: '1rem' }
    const [user, setUser] = useState(null)
     useEffect(()=>{
         setUser(localStorage.getItem('user'))
@@ -51,7 +51,7 @@ const logout = (e) =>{
                             <a id="search-btn"><IoSearch style={{fontSize: '3rem'}}  /></a>
                             <a href="#" title="Bəyənilənlər"> <BsFillHeartFill onMouseOver={changeColorButton} style={{fontSize: '3rem',color:'#DB7093'}} /></a>
                            
-                         {user? <MdOutlineLogout onClick={logout} />:<Link to="/login"><CgProfile className='text-success'  size={30} /></Link>} 
+                         {user? <MdOutlineLogout size={35}  onClick={logout} />:<Link to="/login"><CgProfile className='text-success' size={35} /></Link>} 
                         </div>
                           
                     </header>
