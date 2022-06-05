@@ -49,7 +49,7 @@ const logout = (e) =>{
 
                          
                             <a id="search-btn"><IoSearch style={{fontSize: '3rem'}}  /></a>
-                            <a href="#" title="Bəyənilənlər"> <BsFillHeartFill onMouseOver={changeColorButton} style={{fontSize: '3rem',color:'#DB7093'}} /></a>
+                            <Link to='/favbook' title="Bəyənilənlər"> <BsFillHeartFill onMouseOver={changeColorButton} style={{fontSize: '3rem',color:'#DB7093'}} /></Link>
                           <div>
                          {user? <MdOutlineLogout size={35}  onClick={logout} />:<Link to="/login"><CgProfile className='text-success' size={35} /></Link>} 
                          </div> 

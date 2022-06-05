@@ -15,6 +15,7 @@ import Book2 from './Readbook/Book2'
 import Book3 from './Readbook/Book3'
 import Book4 from './Readbook/Book4'
 import Book5 from './Readbook/Book5'
+import FavBooks from './FavBooks'
 
 export default function Defaultpage() {
   return (
@@ -33,6 +34,7 @@ export default function Defaultpage() {
       
           <Route path="/login" element={<Newlogin />} />
           <Route path="/register" element={<Newregister />} />
+          <Route path='favbook' element={<FavBooks/>}></Route>
                 <Route path='/book1' element={<Book1/>}/>
                 <Route path='/book2' element={<Book2/>}/>
                 <Route path='/book3' element={<Book3/>}/>
