@@ -31,7 +31,7 @@ const logout = (e) =>{
         <div>
             <div className="container">
                 <div className="navbar-container">
-                    <header className="navbar-wrapper d-flex justify-content-between align-items-center p-4 px-0">
+                    <header className="navbar-wrapper d-flex justify-content-between align-items-center p-4 px-0" style={{width: '85vw'}}>
                         <div className="navbar-logo">
                             <div className="logo-wrapper">
                                 <a href="./index.html"
@@ -77,7 +77,7 @@ const logout = (e) =>{
                     </a>
                 </div>
             </div>
-            <div className="bottom-navbar d-flex justify-content-center align-items-center bg-danger">
+            <div className="bottom-navbar d-flex justify-content-center align-items-center bg-danger" style={{width: '100vw'}}>
                 <a href="#" className="bottom-navbar-nav fas fa-home" title="home"></a>
                 <a href="#" className="bottom-navbar-nav fas fa-heart" title="heart"></a>
                 <a href="#" className="bottom-navbar-nav fas fa-list" title="list"></a>

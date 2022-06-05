@@ -768,6 +768,7 @@ html {
 
 .footer__request-form {
     display: flex;
+    align-items: center;
 }
 
 .footer__request-left,
@@ -801,6 +802,7 @@ html {
     justify-content: flex-end;
     padding-right: 40px;
     height: 35px;
+    margin-left: 20px;
 }
 
 .footer__submit-btn {
@@ -955,6 +957,14 @@ html {
 @media (max-width: 768px) {
 
     /* Navbar style */
+
+    .footer__request-form {
+      display: block;
+  }
+  
+  .footer__submit-btn {
+    margin: auto;
+  }
 
     .container {
         padding: 0rem .5rem;
