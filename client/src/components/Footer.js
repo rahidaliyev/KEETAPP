@@ -2,8 +2,11 @@ import  Axios  from 'axios';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../css/libro.css'
+import {FaFacebookF,FaInstagram,FaLinkedinIn,FaYoutube,FaTelegram} from 'react-icons/fa'
+import {SiGmail} from 'react-icons/si'
 
 
+const iconsize={fontSize:"18px"}
 export default function Footer() {
 
     const [email, setEmail] = useState("");
@@ -77,19 +80,19 @@ export default function Footer() {
                                 </ul>
                             </div>
                             <div className="footer__nav-bottom">
-                                <a href="#" className="footer__nav-social"><i className="fa-brands fa-facebook-f"></i></a>
-                                <a href="#" className="footer__nav-social"><i className="fa-brands fa-twitter"></i></a>
-                                <a href="#" className="footer__nav-social"><i className="fa-brands fa-linkedin"></i></a>
-                                <a href="#" className="footer__nav-social"><i className="fa-brands fa-pinterest-p"></i></a>
-                                <a href="#" className="footer__nav-social"><i className="fa-brands fa-youtube"></i></a>
-                                <a href="#" className="footer__nav-social"><i className="fa-brands fa-instagram"></i></a>
+                                <a href="#" className="footer__nav-social"><FaFacebookF style={iconsize}/></a>
+                                <a href="#" className="footer__nav-social"><FaInstagram style={iconsize} /></a>
+                                <a href="#" className="footer__nav-social"><FaLinkedinIn style={iconsize} /></a>
+                                <a href="#" className="footer__nav-social"><SiGmail style={iconsize} /></a>
+                                <a href="#" className="footer__nav-social"><FaYoutube style={iconsize} /></a>
+                                <a href="#" className="footer__nav-social"><FaTelegram style={iconsize} /></a>
                             </div>
                         </div>
                         <div className="footer__request">
                             <h3 className="footer__nav-title">KİTAB TƏLƏB EDİN</h3>
                             <p className="footer__nav-text">Kitab tələb etmək üçün aşağıdakı Formanı doldurun. Kitab əlçatan olan
                                 kimi sizə məlumat verəcəyik.</p>
-                            <form className="footer__request-form">
+                            <form  className="footer__request-form">
                                 <div className="footer__request-left">
                                     <label htmlFor="" className="footer__request-label">
                                         Email: *

@@ -758,7 +758,7 @@ html {
 }
 
 .footer__nav-social:hover {
-    color: #27ae60;
+    color: red;
     background-color: #fff;
 }
 
@@ -768,6 +768,7 @@ html {
 
 .footer__request-form {
     display: flex;
+    position: relative;
 }
 
 .footer__request-left,
@@ -813,6 +814,8 @@ html {
     border: none;
     background-color: #fff;
     padding: 4px 16px;
+    position: absolute;
+    top:120px;
 }
 
 .footer__copyright {
@@ -835,6 +838,13 @@ html {
 
     .footer__nav-list {
         margin-bottom: 20px;
+    }
+    /* footer top added */
+    .footer__submit-btn{
+        top: 120px;
+    }
+   #footer{
+        max-width: 1044px;
     }
 }
 
@@ -949,6 +959,10 @@ html {
     }
     .navbar-logo .logo-wrapper{
         width: 241px;
+    }
+    /* footer top added */
+    .footer__submit-btn{
+        top: 120px;
     }
 }
 
@@ -1087,6 +1101,10 @@ html {
 
     .footer__submit {
         padding: 0;
+    }
+    /* footer top added */
+    .footer__submit-btn{
+        top: 230px;
     }
 }
 
