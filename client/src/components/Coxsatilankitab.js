@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Route, Routes } from 'react-router'
 import store from '../redux/store'
 import '../css/libro.css'
 import '../css/new-card.css'

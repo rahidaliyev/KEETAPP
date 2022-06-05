@@ -46,7 +46,7 @@ export default function BookCard(props) {
                             <a href="#" className="text-decoration-none">
 
 
-                                <Link to={user ?  props.id == 1 ? '/book1' : props.id == 2 ? 'book2' : props.id == 3 ? 'book3' : props.id == 4 ? 'book4' : props.id == 5 ? 'book5' : '':'/login'}
+                                <Link style={{textDecoration:"none"}} to={user ?  props.id == 1 ? '/book1' : props.id == 2 ? 'book2' : props.id == 3 ? 'book3' : props.id == 4 ? 'book4' : props.id == 5 ? 'book5' : '':'/login'}
                                     className="bg-success card-btn d-block rounded text-capitalize text-white fs-4 p-2 w-100">
                                     davamını oxu
                                 </Link>

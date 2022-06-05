@@ -2,7 +2,7 @@ import React, { useState,useEffect} from 'react'
 import store from '../redux/store'
 import Footer from './Footer'
 import Navbar from './Navbar'
-import BestSeller from './BestSeller/BestSeller'
+import FavBookList from './FavBookList'
 export default function FavBooks() {
     const [card,setCard]=useState([])
     useEffect(()=>{
@@ -11,9 +11,12 @@ export default function FavBooks() {
     })
     console.log(card)
     return (
-    <div>
+    <div >
        <Navbar/>
-       {    card.map((el)=>{return <BestSeller {...el}/>})}
+       <div style={{display: 'flex',flexDirection: 'row', justifyContent: 'center'}}>
+      
+       {    card.map((el)=>{return <FavBookList {...el}/>})}
+       </div>
        <Footer/> 
     </div>
   )
