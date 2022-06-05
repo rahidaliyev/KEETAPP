@@ -876,6 +876,7 @@ html {
 
     .carousel-container .carousel-inner .carousel-item-container .carousel-item-images .carousel-images-wrapper .carousel-item {
         position: relative;
+  
     }
 
     .carousel-container .carousel-inner .carousel-item-container .carousel-item-images .carousel-images-wrapper .carousel-item .carousel-images {
@@ -1112,7 +1113,10 @@ html {
     html {
         font-size: 50%;
     }
-
+.cardsdisplay{
+  display: grid;
+ 
+}
     .fa-heart {
         display: none;
     }
