@@ -7,7 +7,7 @@ import BestSeller from './BestSeller/BestSeller'
 
 
 export default function Coxsatilankitab() {
-  console.log('coxsatilan')
+  // console.log('coxsatilan')
   
 const [card,setCard]=useState([])
 console.log(card)

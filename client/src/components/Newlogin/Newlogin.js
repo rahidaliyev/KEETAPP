@@ -99,7 +99,7 @@ export default function Newlogin() {
                             </a>
                         </div>
                         <div  style={{position: "absolute" ,display:  checkPassword ? 'block' : 'none',color: 'red', marginTop: '-17px' } }>{checkPassword}</div>
-          <div name='passcheck' style={{ color: 'red', marginTop: '-17px' }} >{lenghtError}</div>
+          <div name='passcheck' style={{ color: 'red', marginTop: '-2px' }} >{lenghtError}</div>
 
                     </div>
                     <input style={{ marginTop: '2rem' }} type="submit" onClick={submitForm} name="" value="Login" />
