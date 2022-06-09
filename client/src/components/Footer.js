@@ -80,12 +80,12 @@ export default function Footer() {
                                 </ul>
                             </div>
                             <div className="footer__nav-bottom">
-                                <a href="#" className="footer__nav-social"><FaFacebookF style={iconsize}/></a>
-                                <a href="#" className="footer__nav-social"><FaInstagram style={iconsize} /></a>
-                                <a href="#" className="footer__nav-social"><FaLinkedinIn style={iconsize} /></a>
-                                <a href="#" className="footer__nav-social"><SiGmail style={iconsize} /></a>
-                                <a href="#" className="footer__nav-social"><FaYoutube style={iconsize} /></a>
-                                <a href="#" className="footer__nav-social"><FaTelegram style={iconsize} /></a>
+                                <a target="_blank"  href="https://www.facebook.com/rahid.aliyev.7/" className="footer__nav-social"><FaFacebookF style={iconsize}/></a>
+                                <a target="_blank"  href="https://www.instagram.com/sabinaaskarova1/" className="footer__nav-social"><FaInstagram style={iconsize} /></a>
+                                <a target="_blank" href='https://www.linkedin.com/in/rahid-aliyev-5a9665196/' className="footer__nav-social"><FaLinkedinIn style={iconsize} /></a>
+                                <a href="mailto: sabinaaskarova56@gmail.com?subject = Feedback&body = Message" className="footer__nav-social"><SiGmail style={iconsize} /></a>
+                                <a target="_blank" href="https://www.youtube.com/channel/UC5EOpENgllrxliKdsqgsx6g" className="footer__nav-social"><FaYoutube style={iconsize} /></a>
+                                <a target="_blank" href="https://t.me/sabinaaskarova1" className="footer__nav-social"><FaTelegram style={iconsize} /></a>
                             </div>
                         </div>
                         <div className="footer__request">
